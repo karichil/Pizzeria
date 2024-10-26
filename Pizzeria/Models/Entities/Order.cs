@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using WebGrease;
 
 namespace Pizzeria.Models
@@ -19,6 +20,6 @@ namespace Pizzeria.Models
             Completed = 3,
             Deleted = -1
         }
-        //public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
