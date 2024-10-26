@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Pizzeria.Models
 {
-    public class Pizzeria
+    public class MainPizzeria
     {
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<User> Users { get; set; }

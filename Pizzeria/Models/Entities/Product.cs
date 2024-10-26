@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Drawing.Imaging;
 using System.Drawing;
+using Pizzeria.Models.Entities;
 
 namespace Pizzeria.Models
 {
@@ -22,5 +23,6 @@ namespace Pizzeria.Models
         public bool IsOnSale { get; set; }
         public Image SmallImage { get; set; }
         public Image BigImage { get; set; }
+        public virtual ICollection<OrderProduct> OrderProducts { get;}
     }
 }

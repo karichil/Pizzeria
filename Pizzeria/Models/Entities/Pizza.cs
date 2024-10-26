@@ -7,7 +7,6 @@ namespace Pizzeria.Models
 {
     public class Pizza : Product
     {
-        public int Id { get; set; }
         public enum Dough
         {
             Thin = 1,

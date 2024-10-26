@@ -247,8 +247,9 @@
     <Compile Include="Models\Entities\Drink.cs" />
     <Compile Include="Models\Entities\Employee.cs" />
     <Compile Include="Models\Entities\Order.cs" />
+    <Compile Include="Models\Entities\OrderProduct.cs" />
     <Compile Include="Models\Entities\Pizza.cs" />
-    <Compile Include="Models\Entities\Pizzeria.cs" />
+    <Compile Include="Models\Entities\MainPizzeria.cs" />
     <Compile Include="Models\Entities\Product.cs" />
     <Compile Include="Models\Entities\User.cs" />
     <Compile Include="PizzaContext.cs" />
