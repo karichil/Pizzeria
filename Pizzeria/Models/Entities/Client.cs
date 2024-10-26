@@ -2,7 +2,7 @@
 
 namespace Pizzeria.Models
 {
-    public class Client:User
+    public class Client : User
     {
         public long Id { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
