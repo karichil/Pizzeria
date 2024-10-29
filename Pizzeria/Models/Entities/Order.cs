@@ -2,17 +2,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using WebGrease;
 
 namespace Pizzeria.Models
 {
     public class Order
     {
-        public long Id { get; set; }
-        public long ClientId { get; set; } 
-        public virtual Client Client { get; set; }
-        public DateTime DateOdOrder { get; set; } 
+        [Key]
+        public int OrderID { get; set; }
+
+        [Required]
+        public DateTime DateOfOrder { get; set; }
+
+        [Required]
         public DateTime DeliveryDate { get; set; }
+
+        [Required]
+        public decimal TotalPrice { get; set; }
+
         public enum OrderState
         {
             Created = 0,
@@ -21,6 +29,12 @@ namespace Pizzeria.Models
             Completed = 3,
             Deleted = -1
         }
+
+        //Klucze obce i połączenia
+        public int UserID { get; set; }
+        public virtual User User { get; set; }
+        
         public virtual ICollection<OrderProduct> OrderProduct { get; set; }
+        
     }
 }
