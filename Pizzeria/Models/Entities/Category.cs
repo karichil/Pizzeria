@@ -12,7 +12,7 @@ namespace Pizzeria.Models
         public string CategoryName { get; set; }
 
         //Klucze obce i po³¹czenia
-        public virtual ICollection<User> Users { get;}
+        public virtual ICollection<Product> Products { get;}
         
     }
 }
