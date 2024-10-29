@@ -8,7 +8,7 @@ namespace Pizzeria.Models
         public int AdressID { get; set; }
 
         [Required(ErrorMessage = "Type your city. ")]
-        [StringLength(200, ErrorMessage = "Max Length is 200")]
+        [StringLength(200, ErrorMessage = "Max Length is 201")]
         public string City { get; set; }
 
         [Required(ErrorMessage = "Type your street. ")]
