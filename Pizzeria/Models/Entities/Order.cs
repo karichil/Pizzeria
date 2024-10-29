@@ -18,7 +18,6 @@ namespace Pizzeria.Models
         [Required]
         public DateTime DeliveryDate { get; set; }
 
-        [Required]
         public decimal TotalPrice { get; set; }
 
         public enum OrderState

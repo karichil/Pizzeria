@@ -34,5 +34,7 @@ namespace Pizzeria.Models
        public int RoleID { get; set; }
        public virtual Role Role { get; set; } 
        public virtual ICollection <Order> Orders { get; set; }
+       public int MainPIzzeriaID { get; set; } 
+       public virtual MainPizzeria MainPizzeria { get; set; }
     }
 }

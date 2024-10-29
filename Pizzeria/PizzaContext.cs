@@ -16,18 +16,13 @@ namespace Pizzeria
         DbSet<Product> Products { get; set; }
         DbSet<User> Users { get; set; }
         DbSet<OrderProduct> OrderProducts { get; set; }
+        DbSet<Category> Categories { get; set; }
+        DbSet<Role> Roles { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<OrderProduct>()
-                 .HasKey(op => new { op.OrderID, op.ProductID });
-
-            modelBuilder.Entity<MainPizzeria>()
-                 .HasMany(p => p.Products);
-
-             modelBuilder.Entity<MainPizzeria>()
-                 .HasMany(u => u.Users);
+            
         }
     }
 

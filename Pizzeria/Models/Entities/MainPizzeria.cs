@@ -7,6 +7,7 @@ namespace Pizzeria.Models
 {
     public class MainPizzeria
     {
+        public int MainPizzeriaID { get; set; }
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<User> Users { get; set; }
     }

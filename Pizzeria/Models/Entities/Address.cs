@@ -23,7 +23,6 @@ namespace Pizzeria.Models
         [StringLength(200, ErrorMessage = "Max Length is 200")]
         public string PostalCode { get; set; }
 
-        //Klucze obce i połączenia
         public int UserID { get; set; }
         public virtual User User { get; set; }
     }

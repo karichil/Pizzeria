@@ -13,18 +13,26 @@ namespace Pizzeria.Models
     {
         [Key]
         public int ProductID { get; set; }
-        public string Name { get; set; }
-        public enum Category
-        {
-            Pizza = 1,
-            Addition = 2,
-            Drink = 3
-        }
+
+        [Required(ErrorMessage = "Product name is required!")]
+        public string ProductName { get; set; }
+
+        [Required(ErrorMessage = "Price is required!")]
+        [Range(0, 1000, ErrorMessage = "Incorrect amount!")]
         public decimal Price { get; set; }
+
+        [Required(ErrorMessage = "Description is required!")]
+        [MaxLength(500, ErrorMessage = "Max lenght is 500!")]
         public string Description { get; set; }
         public bool IsOnSale { get; set; }
         public Image SmallImage { get; set; }
         public Image BigImage { get; set; }
-        public virtual ICollection<OrderProduct> OrderProducts { get;}
+
+        //Klucze obce i połączenia
+        public int CategoryID { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual ICollection<OrderProduct> OrderProducts { get; set; }
+        public int MianPizzeriaID { get; set; }
+        public virtual MainPizzeria MainPizzeria { get; set; }
     }
 }

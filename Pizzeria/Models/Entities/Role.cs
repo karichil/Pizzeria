@@ -14,7 +14,7 @@ namespace Pizzeria.Models
         [Key]
         public int RoleID { get; set; }
 
-        [Required(ErrorMessage = "Type your rolename. ")]
+        [Required(ErrorMessage = "Role is required!")]
         [StringLength(200, ErrorMessage = "Max Length is 200")]
         public string RoleName { get; set; }
 
