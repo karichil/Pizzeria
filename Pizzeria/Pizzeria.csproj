@@ -248,15 +248,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entities\Addition.cs" />
     <Compile Include="Models\Entities\Address.cs" />
     <Compile Include="Models\Entities\Category.cs" />
-    <Compile Include="Models\Entities\Client.cs" />
-    <Compile Include="Models\Entities\Drink.cs" />
-    <Compile Include="Models\Entities\Employee.cs" />
     <Compile Include="Models\Entities\Order.cs" />
     <Compile Include="Models\Entities\OrderProduct.cs" />
-    <Compile Include="Models\Entities\Pizza.cs" />
     <Compile Include="Models\Entities\MainPizzeria.cs" />
     <Compile Include="Models\Entities\Product.cs" />
     <Compile Include="Models\Entities\Role.cs" />

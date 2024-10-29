@@ -5,12 +5,14 @@ using System.Web;
 using System.Drawing.Imaging;
 using System.Drawing;
 using Pizzeria.Models.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pizzeria.Models
 {
     public class Product
     {
-        public int Id { get; set; }
+        [Key]
+        public int ProductID { get; set; }
         public string Name { get; set; }
         public enum Category
         {
